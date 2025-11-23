@@ -6,10 +6,11 @@ try:
     import spotipy
     from spotipy.oauth2 import SpotifyOAuth
     from InquirerPy import inquirer
+    import colorama
+    colorama.init()
 except ImportError:
-    print("\033[31mhi so u need to do 'pip install spotipy InquirerPy' to run all ts!!\033[0m")
+    print("\033[31mhi so u need to do 'pip install spotipy InquirerPy colorama' to run all ts!!\033[0m")
     sys.exit(1)
-
 
 ################ config stuff ################
 CLIENT_ID = "put client id here"
